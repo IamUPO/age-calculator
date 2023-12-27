@@ -32,17 +32,22 @@ main {
     padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    position: relative;
 }
 
 .wrapper {
-    height: 625px;
-    width: 841px;
+    height: 650px;
+    width: 840px;
     background-color: var(--White);
     border-radius: 25px 25px 200px;
-    padding: 60px 55px;
+    padding: 50px 55px;
     transition: all 300ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 .wrapper:hover {
@@ -52,11 +57,10 @@ main {
 .input-group {
     display: flex;
     justify-content: flex-start;
-    gap: 33px;
+    gap: 32px;
     border-bottom: 0.05rem solid rgba(0, 0, 0, 0.14);
-    overflow: auto;
-    padding-left: 1px;
-    padding-right: 1px;
+    align-items: flex-start;
+    padding-bottom: 40px;
 }
 
 .day,
@@ -89,7 +93,7 @@ main {
     padding: 22px;
     font-size: 29px;
     font-weight: 700;
-    color: var(--Smoke-gray);
+    color: var(--Off-black);
     transition: all 250ms ease-in-out;
 }
 
@@ -121,9 +125,6 @@ input:hover {
 
 .input-container {
     position: relative;
-    margin-bottom: 1rem;
-    padding-left: 1px;
-    padding-right: 1px;
 }
 
 .calc-btn {
@@ -169,7 +170,6 @@ input:hover {
 .input-msg {
     width: 160px;
     height: 35px;
-    margin-bottom: 20px;
 }
 
 #calc-result {
@@ -214,4 +214,9 @@ input:hover {
         padding-left: 2px;
         padding-right: 2px;
     }
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
 }
