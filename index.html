@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Age Calculator</title>
+        <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon"/>
+        <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon"/>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <script defer src="js/script.js"></script>
+    </head>
+    <body>
+        <main>
+            <div class="wrapper">
+                <form class="input-container">
+                    <div class="input-group">
+                        <div class="day">
+                            <label for="day">Day</label>
+                            <input type="text" id="day" placeholder="DD">
+                            <div class="input-msg"><span id="dayError" class="error"></span><span id="daySuccess" class="success"></span>
+                            </div>
+                        </div>
+                        <div class="month">
+                            <label for="month">Month</label>
+                            <input type="text" id="month" placeholder="MM">
+                            <div class="input-msg"><span id="monthError" class="error"></span><span id="monthSuccess" class="success"></span>
+                            </div>
+                        </div>
+                        <div class="year">
+                            <label for="year">Year</label>
+                            <input type="text" id="year" placeholder="YYYY">
+                            <div class="input-msg"><span id="yearError" class="error"></span><span id="yearWarning" class="warning"></span><span id="yearSuccess" class="success"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="calculateAge(); return false;" class="calc-btn">
+                        <img src="img/icon-arrow.svg" alt="button-icon">
+                    </button>
+                </form>
+                <div id="calc-result">
+                    <div class="result-wrapper">
+                        <p class="calc-result">--</p>
+                        <p class="result">Years</p>
+                    </div>
+                    <div class="result-wrapper">
+                        <p class="calc-result">--</p>
+                        <p class="result">Months</p>
+                    </div>
+                    <div class="result-wrapper">
+                        <p class="calc-result">--</p>
+                        <p class="result">Days</p>
+                    </div>
+                </div>
+            </div>
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                Coded by <a href="https://github.com/IamUPO/">Promise Uzor</a>.
+            </div>
+        </main>
+    </body>
+</html>
