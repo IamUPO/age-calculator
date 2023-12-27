@@ -173,7 +173,7 @@ input:hover {
 
 .input-msg {
     width: 160px;
-    height: 35px;
+    height: 40px;
 }
 
 @media (max-width:860px) {
@@ -200,7 +200,7 @@ input:hover {
         display: flex;
         justify-content: flex-start;
         gap: 33px;
-        padding-bottom: 3rem;
+        padding-bottom: 3.5rem;
     }
 
     .day input,
