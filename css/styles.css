@@ -92,7 +92,7 @@ main {
     outline: 1px solid #cccccc;
     border-radius: 7px;
     padding: 22px;
-    font-size: 29px;
+    font-size: clamp(20px, 3vw, 29px);
     font-weight: 700;
     color: var(--Off-black);
     transition: all 250ms ease-in-out;
@@ -158,11 +158,12 @@ input:hover {
 
 .calc-result {
     color: #864cff;
+    transition: color 1s ease-in-out;
 }
 
 .result-wrapper p {
     font-weight: 800;
-    font-size: 70px;
+    font-size: clamp(40px, 6vw, 70px);
     text-transform: lowercase;
     font-style: italic;
     letter-spacing: 2px;
