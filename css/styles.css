@@ -154,6 +154,8 @@ input:hover {
     justify-content: flex-start;
     gap: 10px;
     font-weight: 800;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 .calc-result {
