@@ -187,13 +187,13 @@ input:hover {
         padding-left: 30px;
         padding-right: 30px;
         width: 100%;
-        height: auto;
         margin-top: 8rem;
         border-top-left-radius: 40px;
         border-top-right-radius: 40px;
         border-bottom-left-radius: 40px;
         overflow: auto;
         padding-top: 60px;
+        height: auto;
     }
 
     .input-group {
